@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+</head>
+<style>
+     body {
+    border: 2px solid black;
+    border-radius: 5%;
+    margin: 10% 35%;
+    background: url(https://www.hdwallpapers.in/download/beautiful_beach_waves_under_shadow_moon_white_cloudy_sky_4k_hd_sky-3840x2160.jpg) no-repeat center/cover;
+    backdrop-filter: blur(5px);
+}
+
+#register {
+    color: black;
+}
+
+#btn {
+    border: solid 1px;
+    background: white;
+    border-radius: 15px;
+    text-decoration: none;
+    height: 30px;
+    width: 170px;
+    border-color: black;
+}
+#btn:hover,#country:hover,#male:hover,#DOB:hover,#female:hover{
+    cursor:pointer;
+}
+
+#username,
+#password,
+#DOB,
+#phone {
+    border: solid 2px;
+
+    margin-top: 20px;
+    border-radius: 50px;
+    height: 30px;
+    background: transparent;
+    color: black;
+    
+}
+#country{
+    margin-top: 20px;
+    border-radius: 50px;
+    height: 30px;
+    background: transparent;
+    color: black;
+    border-width: 0.5px;
+    border: solid;
+    width:70px;
+
+}
+
+::placeholder {
+    color: black;
+}
+</style>
+<body>
+    <center>
+        <b>
+            <h1>LOGIN HERE</h1>
+            <div ><b>
+                <input type="email" name="username" id="username" placeholder="           Enter email"><br>
+                </b>
+        
+            </div>
+
+            <div>
+                <input type="password" name="password" id="password" placeholder="           Enter password"><br>
+            </div>
+
+         
+            <div>
+                <br><br><input type="button" id="btn" name="submit" value="Login"><br><br>
+            </div>
+         
+            <div>
+                Not yet a member? <a id="register" href="register.html" >    Register    </a>
+            </div>
+        </b><br><br>
+    </center>
+</body>
+</html>

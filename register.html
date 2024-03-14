@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+        body {
+    border: 2px solid black;
+    border-radius: 5%;
+    margin: 10% 35%;
+    background: url(https://media.istockphoto.com/id/509546436/photo/moon-gazing.jpg?s=612x612&w=0&k=20&c=fO4M1LA52hRfC2f04J2sAD92HhQopQuJUE4uFXHIgJg=) no-repeat center/cover;
+    backdrop-filter: blur(5px);
+}
+
+#register {
+    color: black;
+}
+
+#btn {
+    border: solid 1px;
+    background: white;
+    border-radius: 15px;
+    text-decoration: none;
+    height: 30px;
+    width: 170px;
+    border-color: black;
+}
+#btn:hover,#country:hover,#male:hover,#DOB:hover,#female:hover{
+    cursor:pointer;
+}
+
+#username,
+#password,
+#DOB,
+#phone {
+    border: solid 2px;
+
+    margin-top: 20px;
+    border-radius: 50px;
+    height: 30px;
+    background: transparent;
+    color: black;
+    
+}
+#country{
+    margin-top: 20px;
+    border-radius: 50px;
+    height: 30px;
+    background: transparent;
+    color: black;
+    border-width: 0.5px;
+    border: solid;
+    width:70px;
+
+}
+
+::placeholder {
+    color: black;
+}
+
+    </style>
+   
+</head>
+<body >
+    <center>
+        <b>
+            <h1>REGISTER HERE</h1>
+
+            <div>
+                <input type="text" name="username" id="username" placeholder="           Enter name" maxlength="8"><br>
+            </div>
+
+            <div >
+                <input type="email" name="username" id="username" placeholder="          Enter email"><br>
+                
+        
+            </div>
+
+            <div >
+                <input type="password" name="password" id="password" placeholder="          Enter password"><br><br>
+            </div>
+
+            <div>Gender :
+                <input type="radio" id="male" name="gender">male
+                <input type="radio" id="female" name="gender">female<br><br>
+            </div>
+
+            <div>
+                Date-of-birth:
+                <input type="date" id="DOB"><br><br>
+            </div>
+
+            <div>
+                Phone:
+                <select id="country" ><div >
+                    <option selected value="91"><!-- +91 -->India</option>    
+                        <option value="1"><!-- +1 -->United States</option>
+                        <option value="1"><!-- +1 -->Canada</option>
+                        <option value="44"><!-- +44 -->United Kingdom</option>
+                        <option value="33"><!-- +33 -->France</option>
+                        <option value="49"><!-- +49 -->Germany</option>
+                        <option value="81"><!-- +81 -->Japan</option>
+                        <option value="61"><!-- +61 -->Australia</option>
+                        <option value="55"><!-- +55 -->Brazil</option>
+                        <option value="86"><!-- +86 -->China</option>
+                        <option value="234"><!-- +234 -->Nigeria</option>
+                        <option value="52"><!-- +52 -->Mexico</option>
+                        <option value="7"><!-- +7 -->Russia</option>
+                        <option value="27"><!-- +27 -->South Africa</option>
+                        <option value="82"><!-- +82 -->South Korea</option>
+                        <option value="20"><!-- +20 -->Egypt</option>
+                        <option value="351"><!-- +351 -->Portugal</option>
+                        <option value="46"><!-- +46 -->Sweden</option>
+                        <option value="34"><!-- +34 -->Spain</option>
+                    </div>
+                </select>
+                <input type="text" id="phone"name="Phone" maxlength="10" placeholder="          Phone number"><br><br>
+            </div>
+
+            <div>
+                <b>
+                    <input type="button" id="btn" name="submit" value="Submit"><br><br>
+                </b>
+            </div>
+            <div >
+            Already have an account?<a id="register" href="login.html">   Login    </a><br><br></div> 
+        </b>
+    </center>
+</body>
+</html>

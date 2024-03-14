@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+       footer {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+        .me {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+        }
+        .me .logo{
+            width: 25%;
+        }
+        nav {
+            display: flex;
+            width: 84%;
+            margin: auto;
+            padding: 20px 0;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .detel {
+            margin: 100px 0;
+            margin-left: 8%;
+            margin-right: 13%;
+        }
+
+        .detel h1 {
+            font-size: 50px;
+            margin-left: 10px;
+            color: #212121;
+            margin-bottom: 20px;
+        }
+
+        span {
+            color: orange;
+        }
+
+        .detel p {
+            color: #5e5858;
+            size :29px;
+            font-weight: bolder;
+            line-height: 22px;
+        }
+
+        .detel a {
+            background: #212121;
+            padding: 10px 18px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            display: inline-block;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+
+        .shape {
+            width: 35%;
+            height: auto;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 40px;
+            right: 100px;
+        }
+        
+        .boy {
+            width: 25%;
+            height: auto;
+            position: absolute;
+            bottom: 30px;
+            right: 140px;
+        }
+
+        .images:hover .boy {
+            bottom: 100px;
+            transition: bottom 1s;
+        }
+
+        .images:hover .shape {
+            bottom: 40px;
+            transition: bottom 1s;
+        }
+
+        h1 {
+            margin-top: 50px;
+            margin-left: 100px;
+            text-decoration: double;
+            font-weight: bolder;
+        }
+
+        .point {
+            margin-left: 40px;
+        }
+        .me nav ul li a {
+            position: relative;
+            text-decoration: none;
+            color: black; /* Change the color as needed */
+        }
+
+        .me nav ul li a::after {
+            content: '';
+            color: red;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: rgb(246, 49, 5); /* Change the color as needed */
+            transition: all 0.3s ease-in;
+        }
+        .me nav ul li a:hover::after {
+            width: 100%;
+        }
+        nav ul li a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+     <div class="me">
+        <nav>
+            <img src="image/atharv.jpg" class="logo">
+            <ul>
+                <li><a href="portfilio.html">HOME</a></li>
+                <li><a href="about_me.html">ABOUT ME</a></li>
+                <li><a href="skill.html">SKILLS</a></li>
+                <li><a href="project.html">PROJECTS</a></li>
+                <li><a href="hire-me.html">HIRE ME </a></li>
+            </ul>
+        </nav>
+        <div class="detel">
+            <h1>I'm <span>Atharv Gurav</span></h1>
+            <p>This is my official portfolio website to showcase all Details and college activities</p>
+            <a href="image/cv.pdf">OPEN CV</a>
+        </div>
+        <div class="images">
+            <img src="image/shape.avif" class="shape">
+            <img src="image/IMG_20230808_130357-removebg-preview.png" class="boy">
+        </div>
+    </div>
+    </header>
+    <footer>
+        <p>&copy; 2024 Atharv Gurav. All rights reserved.</p>
+    </footer>
+</body>
+</html>
